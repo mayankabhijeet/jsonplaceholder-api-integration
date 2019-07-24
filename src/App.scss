@@ -1,0 +1,162 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.67);
+}
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5rem;
+}
+
+ul {
+  list-style: none;
+  li {
+    padding: 5px 10px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.67);
+}
+
+.center {
+  text-align: center;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+
+  table {
+    margin: auto;
+    border-collapse: collapse;
+
+    thead {
+      background-color: #c7e6f7;
+      tr {
+        &:first-child {
+          th:first-child {
+            border-top-left-radius: 4px;
+          }
+        }
+
+        &:first-child {
+          th:last-child {
+            border-top-right-radius: 4px;
+          }
+        }
+      }
+    }
+
+    tr {
+      &:nth-child(even) {
+        background-color: #ecf6fc;
+      }
+
+      &:last-child {
+        td:first-child {
+          border-bottom-left-radius: 4px;
+        }
+      }
+
+      &:last-child {
+        td:last-child {
+          border-bottom-right-radius: 4px;
+        }
+      }
+    }
+
+    th,
+    td {
+      padding: 10px 15px;
+    }
+  }
+}
+
+.pagination-btn-container {
+  margin: auto;
+  max-width: 200px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+
+  button {
+    border: none;
+    width: 50%;
+    padding: 10px 0;
+    font-size: 12px;
+    outline: none;
+    cursor: pointer;
+
+    &:first-child {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+
+    &:hover {
+      background-color: #fff;
+      box-shadow: -3px 2px 30px 10px rgba(0, 129, 204, 0.2);
+      color: #0081cc;
+    }
+  }
+}
+
+.pd-btn-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px 0;
+
+  button {
+    width: 45%;
+    border: 1px solid rgba(0, 129, 204, 0.2);
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    border: none;
+    padding: 10px 0;
+    font-size: 14px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #fff;
+      box-shadow: -3px 2px 30px 10px rgba(0, 129, 204, 0.2);
+      color: #0081cc;
+    }
+  }
+}
+
+.pd-title {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.shadow {
+  box-shadow: -3px 2px 40px 0 rgba(0, 129, 204, 0.2);
+  border-radius: 4px;
+  padding: 15px;
+}
+
+.disabled{
+  pointer-events: none;
+  opacity: 0.5;
+}
